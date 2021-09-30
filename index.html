@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        <title>Helpy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
+    </header>
+    <body>
+        <div class="container">
+            <div class="nav-bar">
+            </div>
+            <div class="card">
+                <div class="home-principal">
+                    <div class="container-home">
+                        <div class="left home-scale">
+                            <img src="./img/home.jpg" width="500" height="500">
+                        </div>
+                        <div class="right home-scale">
+                            <div class="home-text">
+                                <h1>Hola Gamer</h1>
+                                <h2>Cansado de perder y no poder progresar</h2>
+                                <h3>Necesitas apoyo pero nadie sabe jugar</h3>
+                                <h4>Unete a nuestra comunidad donde podras contactarte con diversos entrenadores de juegos lo cuales te aconsejaran y dejaras de perder. Contamos con diversos juegos y varios judaores profesionales para que te enseñen y asi algun dia ir a una TI</h4>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion">
+                    <h1>Guias Profesionales</h1>
+                    <h2>Tenemos diversas guias de juegos competitivos </h2>
+                    <div class="grid">
+                        <div class="component"></div>
+                        <div class="component"></div>
+                    </div>
+                </div>
+                <div class="promotion">
+                    <h1>Jugadores Profesionales</h1>
+                    <h2>Contamos con los mejores entrenadores</h2>
+                    <div class="grid">
+                        <div class="component"></div>
+                        <div class="component"></div>
+                    </div>
+                </div>
+                <div class="promotion">
+                    <h1>¿Quiénes Somos?</h1>
+                    <h2>Este proyecto fue elaborado por tres 
+                        estudiantes de la carreda de ingeniera de software</h2>
+                    <div class="users">
+                        <div class="user"></div>
+                        <div class="user"></div>
+                        <div class="user"></div>
+                    </div>
+                </div>
+                <div class="promotion">
+                    <h1>Solicitar Servicio</h1>
+                    <h2>Mandanos tus datos para podernos poner en
+                        en contacto contigo y asi puedo
+                        ganar cupones y sabiduría
+                        y convertiter en un
+                        jugador profesional</h2>
+                    <div class="register">
+                        <input placeholder="Name">
+                        <input placeholder="LastName">
+                        <input placeholder="Email">
+                        <input placeholder="Phone">
+                    </div>
+                    <button class="send">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/main.js"></script>
+</html>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        --nav: rgb(129, 129, 129);
+        --second: rgb(240, 240, 240);
+        --primary: rgb(25, 25, 25);
+    }
+
+    .container{
+        width: 100%;
+        background: rebeccapurple;
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .nav-bar{
+        width: 100%;
+        height: 65px;
+        background: var(--nav);
+    }
+
+    .home-principal{
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        height: 700px;
+        background: var(--primary);
+    }
+
+    .container-home{
+        margin: 0 auto;
+        display: flex;
+        width: auto;
+        height: 700px;
+    }
+
+    .home-scale{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Poppins';
+        flex-direction: column;        
+    }
+
+    .right{
+        align-items: flex-start;
+    }
+
+    .home-text{
+        width: 550px;
+    }
+
+    .home-scale h1{
+        font-size: 3.5em;
+        color: rgb(241, 241, 241);
+        font-style: italic;
+    }
+
+    .home-scale h2{
+        font-size: 2rem;
+        color: rgb(233, 233, 233);
+    }
+
+    .home-scale h3{
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+    }
+
+
+    .home-scale h4{
+        margin-top: 10px;
+        font-weight: normal;
+        text-align: justify;
+        color: white;
+    }
+
+    .card{
+        width: 100%;
+        height: 500px;
+        background: rgb(255, 255, 255);
+    }
+
+    .promotion{
+        background: var(--second);
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .promotion:nth-child(2n+1){
+        background: var(--primary);
+        color: white;
+    }
+
+    .promotion{
+        font-family: 'Poppins';
+        text-align: center;
+    }
+
+    .promotion h1{
+        padding-top: 20px;
+        font-size: 35px;
+        margin: 20px 0;
+    }
+
+    .promotion h2{
+        margin: 30px 0px;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .grid{
+        margin: 30px auto;
+        width: 750px;
+        display: grid;
+        gap: 5rem;
+        grid-auto-rows: 20rem;
+        grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    }
+    
+    .component{
+        grid-column: span 2;
+        background: palegoldenrod;
+    }
+
+    .users{
+        margin: 50px auto;
+        width: 800px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .user{
+        width: 150px;
+        height: 150px;
+        background: rebeccapurple;
+        border-radius: 50%;
+    }
+    
+    .register{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register input{
+        width: 100%;
+        border: 0;
+        margin-top: 10px;
+        font-size: 1rem;
+        padding: 0.8em 0.6em;
+    }
+
+    .send{
+        margin-top: 20px;
+        padding: 0.8em 2.5em;
+        outline: none;
+        cursor: pointer;
+    }
+
+    @media (max-width: 1000px) {
+        .grid{
+            margin: 0 auto;
+            width: 100%;
+            background: rgb(33, 6, 61);
+        }
+
+        .home-principal{
+            display: none;
+        }
+    }
+
+</style>
